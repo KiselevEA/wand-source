@@ -1,0 +1,17 @@
+mixin slider(data)
+	div.carousel.slide#slider(data-ride="carousel")
+		ol.carousel-indicators
+			li.active(data-target="#slider" data-slide-to="0")
+			li(data-target="#slider" data-slide-to="1")
+			li(data-target="#slider" data-slide-to="2")
+		div.carousel-inner
+			div.item.active
+				img.img(src="%=static=%/img/plugins/slide1.jpg" alt="slide")
+			div.item
+				img.img(src="%=static=%/img/plugins/slide2.jpg" alt="slide")
+			div.item
+				img.img(src="%=static=%/img/plugins/slide3.jpg" alt="slide")
+		a.left.carousel-control(href="#slider" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left
+		a.right.carousel-control(href="#slider" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right
